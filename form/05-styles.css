@@ -886,7 +886,7 @@ textarea:focus {
   position: relative;
 }
 
-form-field-icon {
+.form-field-icon {
   font-style: normal;
 }
 
@@ -906,4 +906,5 @@ form-field-icon {
 
 .form-group:focus-within > form-help {
   max-height: 20rem;
-  margin: .4rem 0 0;
+  margin: 0.4rem 0 0;
+}
