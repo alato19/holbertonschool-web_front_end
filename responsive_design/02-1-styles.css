@@ -374,10 +374,28 @@ ul.row {
 @media (max-width: 767px) {
   section-padding: 5rem 1.5rem;
   section-body-padding: 2rem 0 0;
+
+  .ul.row,
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .col-1-2,
+  .col-1-3 {
+    margin: 0 0 3rem 0;
+    width: 100%;
+  }
 }
 
 /* Navbar
       ============================= */
+
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
+}
 
 .nav {
   margin: 0;
