@@ -321,6 +321,7 @@ a:active {
 /* Helpers
       ============================= */
 
+/* Target all images inside the main section */
 main > img {
   width: 100%;
   height: auto;
@@ -372,11 +373,12 @@ ul.row {
 }
 
 @media (max-width: 767px) {
-  section-padding: 5rem 1.5rem;
-  section-body-padding: 2rem 0 0;
-
-  .ul.row,
-  .row {
+  :root {
+    --section-padding: 5rem 1.5rem;
+    --section-body-padding: 2rem 0 0;
+  }
+  .row,
+  ul.raw {
     flex-direction: column;
     margin: 0;
   }
@@ -387,15 +389,8 @@ ul.row {
     width: 100%;
   }
 }
-
 /* Navbar
       ============================= */
-
-@media (max-width: 767px) {
-  .navbar-menu {
-    display: none;
-  }
-}
 
 .nav {
   margin: 0;
@@ -441,6 +436,12 @@ ul.row {
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
 }
 
 /* Header
