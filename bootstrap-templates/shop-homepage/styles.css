@@ -141,7 +141,7 @@ a {
 
   /* Menu Button parameters */
   .btn-container {
-    width: fit-content%;
+    width: fit-content;
     display: flex;
     justify-content: flex-end;
     align-items: center;
